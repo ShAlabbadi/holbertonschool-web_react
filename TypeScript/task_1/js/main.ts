@@ -7,10 +7,12 @@ interface Teacher {
   [propName: string]: any;
 }
 
+// task < 2. Extending the Teacher class > 
 interface Directors extends Teacher {
   numberOfReports: number,
 }
 
+// task < 3. Printing teachers>
 interface printTeacherFunction {
   (firstName: string, lastName: string): string;
 }
@@ -22,7 +24,7 @@ export const printTeacher: printTeacherFunction = function (
   return `${firstName.charAt(0)}. ${lastName}`;
 };
 
-
+// task <4. Writing a class>
 interface StudentConstructor {
   new(firstName: string, lastName: string): StudentClassInterface;
 }
