@@ -54,3 +54,10 @@ export function executeWork(employee: DirectorInterface | TeacherInterface): str
     }
   return request;
 }
+
+//task <7. String literal types>
+type Subjects = "Math" | "History";
+export function teachClass(todayClass: Subjects): string {
+    if (todayClass === 'Math') return 'Teaching Math';
+    if (todayClass === 'History') return 'Teaching History';
+}
